@@ -295,10 +295,7 @@ $count = count($keys);
 //add the quiz question
 quiz_add_quiz_question($result[$keys[$count-1]]->id, $myQuiz2, $page = 0, $maxmark = null);
 
-
 //go to the course page and edit the newly added quiz
-echo $OUTPUT->continue_button(new moodle_url('../../course/modedit.php?update='.$myQuiz2->coursemodule));
-
-//or uncomment out to have the button just return to the homepage
+echo $OUTPUT->continue_button(new moodle_url('../../course/modedit.php?update='.$myQUiz2->id.'));
 //echo $OUTPUT->continue_button(new moodle_url('../../course/view.php?id='.$id1.'#section-'.$sectionNum));
 echo $OUTPUT->footer();
